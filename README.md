@@ -1,17 +1,17 @@
+# Exception Handling in File Reading and Writing
 
-# Обработка исключений в файловом чтении и записи
+The program has two functions:
+1. Reading text from a file
+2. Writing text to a file
 
+When reading text from a file, the program should handle the following exceptions:
 
-Программа имеет две функции:
-1. Чтение текста из файла
-2. Запись текста в файл
+- If the file does not exist, display an error message and prompt the user to enter the name of an existing file.
+- If the file cannot be read (e.g., due to lack of permissions), display an error message.
 
-При чтении текста из файла программа должна обрабатывать следующие исключения:
+When writing text to a file, the program should also handle exceptions:
 
-Если файл не существует, выведите сообщение об ошибке и предложите пользователю ввести имя существующего файла.
-Если файл не может быть прочитан (например, из-за отсутствия разрешений), выведите сообщение об ошибке.
-При записи текста в файл программа также должна обрабатывать исключения:
+- If the file cannot be created or overwritten, display an error message.
+- If an error occurs during writing, such as insufficient disk space, handle this error.
 
-Если файл не может быть создан или перезаписан, выведите сообщение об ошибке.
-Если при записи возникнет ошибка, например, из-за нехватки места на диске, обработайте эту ошибку.
-Реализуйте меню, которое позволит пользователю выбирать, хочет ли он читать текст из файла, записывать текст в файл или завершить программу.
+Implement a menu that allows the user to choose whether to read text from a file, write text to a file, or exit the program.
